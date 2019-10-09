@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
 
-belongs_to :author
+  belongs_to :author
   validate :is_title_case 
 
   before_validation :make_title_case 
@@ -20,4 +20,5 @@ belongs_to :author
 
   def email_author_about_post
   end 
+  
 end
